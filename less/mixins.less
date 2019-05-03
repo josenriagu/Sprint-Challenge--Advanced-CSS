@@ -1,1 +1,52 @@
 // Mixins Here
+
+.componentMargin() {
+    max-width: 800px;
+    width    : 100%;
+    margin   : 0 auto;
+
+    @media @tablet {
+        max-width: 600px;
+    }
+
+    @media @tabletmini {
+        max-width: 500px;
+    }
+
+    @media @mobile {
+        max-width: 450px;
+    }
+}
+
+// flex display
+.flexdisplay(@Direction) {
+    display       : flex;
+    flex-direction: @Direction;
+}
+
+// paragraph styles
+
+.pStyles() {
+    line-height: 1.4;
+    font-size  : 1.6rem;
+}
+
+// button styles
+
+.buttonStyles(@fontsize, @marginbottom) {
+    // border          : 2px solid @navigation-border;
+    width: 30%;
+    // margin-right    : 2em;
+    padding         : 1rem 2rem .5rem 2rem;
+    text-align      : center;
+    border-radius   : .5rem;
+    background-color: @btn-bg-color;
+    font-size       : @fontsize;
+    font-weight     : 600;
+    color           : @porcelain;
+    // margin-bottom   : @marginbottom;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
