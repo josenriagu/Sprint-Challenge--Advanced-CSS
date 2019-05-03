@@ -1,5 +1,6 @@
 // Mixins Here
 
+// component margins
 .componentMargin() {
     max-width: 800px;
     width    : 100%;
@@ -13,7 +14,7 @@
         max-width: 500px;
     }
 
-    @media @mobile {
+    @media @phone {
         max-width: 450px;
     }
 }
@@ -25,18 +26,14 @@
 }
 
 // paragraph styles
-
 .pStyles() {
     line-height: 1.4;
     font-size  : 1.6rem;
 }
 
 // button styles
-
 .buttonStyles(@fontsize, @marginbottom) {
-    // border          : 2px solid @navigation-border;
     width: 30%;
-    // margin-right    : 2em;
     padding         : 1rem 1.5rem .8rem 1.5rem;
     text-align      : center;
     border-radius   : .5rem;
@@ -44,7 +41,6 @@
     font-size       : @fontsize;
     font-weight     : 600;
     color           : @porcelain;
-    // margin-bottom   : @marginbottom;
 
     &:hover {
         cursor: pointer;
