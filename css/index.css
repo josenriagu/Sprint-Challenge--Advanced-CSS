@@ -276,6 +276,11 @@ header div:nth-of-type(2) img {
   border-radius: 0.5rem;
 }
 @media (max-width: 500px) {
+  header div:nth-of-type(2) img {
+    height: 13rem;
+  }
+}
+@media (max-width: 500px) {
   header div:nth-of-type(2) {
     max-width: 100%;
   }
