@@ -362,6 +362,8 @@ header div:nth-of-type(2) img {
 }
 .home .walk .walk-text .btn:hover {
   cursor: pointer;
+  background-color: #F6F7F8;
+  color: #22283A;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
