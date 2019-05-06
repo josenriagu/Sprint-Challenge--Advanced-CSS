@@ -7,32 +7,54 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
+html,
+body {
   font-family: 'Ubuntu', sans-serif;
-  color: @main-font-color;
+  color      : @main-font-color;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Russo One', sans-serif;
-  color: @header-font-color;
+  color      : @header-font-color;
+}
+
+h1 {
+  font-size    : 4.5rem;
+  font-weight  : 600;
+  margin-bottom: 1.5rem;
+
+  @media @phone {
+    font-size: 4rem;
+  }
 }
 
 h2 {
   font-size: 3.2rem;
+  animation: slidein 2s;
+
+  @media @phone {
+    font-size: 2.9rem;
+  }
 }
 
 h3 {
   font-size: 2.8rem;
+  animation: fontbulger 2s 4s;
+
+  @media @phone {
+    font-size: 2.6rem;
+  }
 }
 
 p {
-  font-size: 1.6rem;
-  line-height: 1.4;
+  .pStyles();
+  animation-name: slidein;
 }
 
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;  
+  .componentMargin();
 }
-

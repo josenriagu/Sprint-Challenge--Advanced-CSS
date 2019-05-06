@@ -1,1 +1,55 @@
 // Mixins Here
+
+// component margins
+.componentMargin() {
+    max-width: 800px;
+    width    : 100%;
+    margin   : 0 auto;
+
+    @media @tablet {
+        max-width: 600px;
+    }
+
+    @media @tabletmini {
+        max-width: 500px;
+    }
+
+    @media @phone {
+        max-width: 500px;
+    }
+}
+
+// flex display
+.flexdisplay(@Direction) {
+    display       : flex;
+    flex-direction: @Direction;
+}
+
+// paragraph styles
+.pStyles() {
+    line-height: 1.4;
+    font-size  : 1.6rem;
+}
+
+// button styles
+.buttonStyles(@fontsize, @marginbottom) {
+    width           : 30%;
+    padding         : 1rem 1.5rem .8rem 1.5rem;
+    text-align      : center;
+    border-radius   : .5rem;
+    background-color: @btn-bg-color;
+    font-size       : @fontsize;
+    font-weight     : 600;
+    color           : @porcelain;
+
+    &:hover {
+        cursor          : pointer;
+        background-color: @porcelain;
+        color           : @btn-bg-color;
+    }
+
+    @media @phone {
+        width  : 100%;
+        padding: 3rem 1.5rem;
+    }
+}
